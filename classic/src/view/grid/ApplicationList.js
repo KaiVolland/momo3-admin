@@ -66,7 +66,7 @@ Ext.define('MoMo.admin.view.grid.ApplicationList',{
         flex: 1,
         align: "center",
         tdCls: "column-tool",
-        tpl: '<i class="fa fa-wrench fa-2x" data-qtip="Interface Settings">' +
+        tpl: '<i class="fa fa-paint-brush fa-2x" data-qtip="Edit Layout">' +
             '</i>',
         bind: {
             hidden: '{!allowCreateOrEditWebmaps}'
@@ -76,7 +76,7 @@ Ext.define('MoMo.admin.view.grid.ApplicationList',{
         flex: 1,
         align: "center",
         tdCls: "column-tool",
-        tpl: '<i class="fa fa-list fa-2x" data-qtip="Layers Settings"></i>',
+        tpl: '<i class="fa fa-arrows-alt fa-2x" data-qtip="Edit Startview"></i>',
         bind: {
             hidden: '{!allowCreateOrEditWebmaps}'
         }
@@ -85,7 +85,7 @@ Ext.define('MoMo.admin.view.grid.ApplicationList',{
         flex: 1,
         align: "center",
         tdCls: "column-tool",
-        tpl: '<i class="fa fa-users fa-2x" data-qtip="Share Web Map"></i>',
+        tpl: '<i class="fa fa-list fa-2x" data-qtip="Edit Layers"></i>',
         bind: {
             hidden: '{!allowCreateOrEditWebmaps}'
         }

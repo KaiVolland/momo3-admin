@@ -24,12 +24,14 @@ Ext.define('MoMo.admin.view.tab.CreateOrEditApplication', {
         xtype: 'tbfill'
     }, {
         xtype: 'button',
+        ui: 'momo',
         bind: {
             text: '{cancelBtnText}'
         },
         handler: 'onCancelClick'
     }, {
         xtype: 'button',
+        ui: 'momo',
         bind: {
             text: '{saveBtnText}'
         },
@@ -37,13 +39,34 @@ Ext.define('MoMo.admin.view.tab.CreateOrEditApplication', {
     }],
 
     items: [{
-        xtype: 'momo-application-general'
+        xtype: 'momo-application-general',
+        tabConfig: {
+            flex: 1,
+            iconCls: 'fa fa-gear fa-2x',
+            width: 100,
+            height: 100
+        }
     }, {
-        xtype: 'momo-application-layout'
+        xtype: 'momo-application-layout',
+        tabConfig: {
+            flex: 1,
+            iconCls: 'fa fa-paint-brush fa-2x',
+            height: 100
+        }
     }, {
-        xtype: 'momo-application-start-view'
+        xtype: 'momo-application-start-view',
+        tabConfig: {
+            flex: 1,
+            iconCls: 'fa fa-arrows-alt fa-2x',
+            height: 100
+        }
     }, {
-        xtype: 'momo-application-layer'
+        xtype: 'momo-application-layer',
+        tabConfig: {
+            flex: 1,
+            iconCls: 'fa fa-list fa-2x',
+            height: 100
+        }
     }]
 
 });
