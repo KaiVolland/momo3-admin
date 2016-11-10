@@ -23,21 +23,9 @@
     "url": "https://github.com/terrestris/momoadmin-admin/issues"
   },
   "scripts": {
-    "js-lint": "eslint -c .eslintrc ./",
-    "test": "mocha-phantomjs --ssl-protocol=any --ignore-ssl-errors=true index-mocha.html",
-    "coverage-clean": "rm -rf .instrumented/ && rm -rf ./coverage/ && rm -f ./test/.index_coverage.html",
-    "coverage-sed": "sed -e 's/..\\/app/..\\/.instrumented\\/app/g' ./test/index.html > ./test/.index_coverage.html",
-    "coverage-instrument": "istanbul instrument -o .instrumented/ -x '**/ext/** **/build/** **/node_modules/** **/packages/** **/sass/** **/test/**' ./",
-    "coverage-report": "mocha-phantomjs --ssl-protocol=any --ignore-ssl-errors=true --hooks ./test/phantom_hooks.js ./test/.index_coverage.html && istanbul report --root ./coverage html",
-    "coverage-run": "npm run coverage-clean && npm run coverage-sed && npm run coverage-instrument && npm run coverage-report"
+    "js-lint": "eslint -c .eslintrc ./"
   },
   "dependencies": {
-    "eslint": "1.10.3",
-    "expect.js": "0.3.1",
-    "istanbul": "0.4.2",
-    "mocha": "2.3.4",
-    "mocha-extjs": "^0.1.71",
-    "mocha-phantomjs": "4.0.2",
-    "sinon": "1.17.2"
+    "eslint": "1.10.3"
   }
 }
